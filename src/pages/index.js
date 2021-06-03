@@ -12,14 +12,16 @@ const IndexPage = () => (
     <p>Now go build something great.</p>
     <StaticImage
       src="../images/gatsby-astronaut.png"
+      alt="A Gatsby astronaut"
       width={300}
       quality={95}
       formats={['AUTO', 'WEBP', 'AVIF']}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
+      className={`mb-6`}
     />
     <p>
-      <Link to="/page-2/">Go to page 2</Link>
+      <Link to="/page-2/" className={`text-blue-700 underline`}>
+        Go to page 2
+      </Link>
     </p>
   </Layout>
 )
