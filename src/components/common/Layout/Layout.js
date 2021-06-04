@@ -19,7 +19,7 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div className="my-0 mx-auto max-w-4xl pt-0 px-4 pb-6">
+      <div className="max-w-4xl px-4 pt-0 pb-6 mx-auto my-0">
         <main>{children}</main>
         <Footer />
       </div>
